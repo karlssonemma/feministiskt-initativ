@@ -1,0 +1,75 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+}
+
+nav {
+    width: auto;
+    height: auto;
+    background-color: pink;
+}
+
+#left-nav {
+    padding: 0 40px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 100px;
+
+}
+#logo-header {
+    width: 80px;
+    margin: 0 20px;
+}
+
+#left-nav a {
+    font-size: 2.2rem;
+    text-decoration: none;
+    padding: 0 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#left-nav a:hover {
+    color: #D23185;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    height: 200px;
+    background-color: pink;
+    display: grid;
+    grid-auto-flow: column;
+}
+
+#logo-footer {
+    height: 100px;
+}
+
+#contact-us h1 {
+    font-size: 2rem;
+}
+
+#contact-us p {
+    font-size: 1.5rem;
+}
