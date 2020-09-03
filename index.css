@@ -1,10 +1,21 @@
+* {
+    margin: 0;
+}
+
 html {
     font-size: 62.5%;
+    font-family: sans-serif;
 }
 
 body {
     height: 100vh;
+    background-image: url(./img/index-background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
 }
+
+
+/* NAVBAR */
 
 nav {
     width: auto;
@@ -44,26 +55,139 @@ nav {
 
 
 
+section {
+    padding: 0 15rem;
+}
+
+
+/* INDEX SECTION 1 */
+
+#index-section-1 {
+    background-color: white;
+    height: 100vh;
+}
+
+#index-section-1 h1 {
+    font-size: 6rem;
+}
+
+#index-section-1 span {
+    font-size: 10rem;
+    display: block;
+}
+
+
+/* INDEX SECTION 2 */ 
+
+#index-section-2 {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.473);
+    display: flex;
+}
+
+#index-section-2 article {
+    display: flex;
+    flex-direction: column;
+    padding: 0 4rem;
+    justify-content: center;
+    text-align: center;
+}
+
+#index-section-2 h1, #index-section-2 p {
+    color: white;
+    font-weight: 50;
+}
+
+#index-section-2 h1 {
+    font-size: 3rem;
+    padding: 0.8em;
+}
+
+#index-section-2 p {
+    font-size: 1.6rem;
+}
+
+#index-section-2 i {
+    font-size: 4rem;
+    color: white;
+}
+
+
+/* INDEX SECTION 3 */ 
+
+#index-section-3 {
+    height: 100vh;
+    background-color: white;
+}
+
+
+
+/* VÅR POLITIK SECTION 1 */
+
+#var-politik-section-1 {
+    background-color: white;
+    height: 100vh;
+}
+
+
+#var-politik-section-1 h1 {
+    font-size: 6rem;
+}
+
+/* VÅR POLITIK SECTION 2 */
+
+#var-politik-section-2 {
+    background-color: white;
+}
+
+#var-politik-section-2 div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+}
+
+#var-politik-section-2 article {
+    font-size: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: pink;
+    text-align: center;
+}
 
 
 
 
 
 
-
-
-
-
+/* FOOTER */
 
 footer {
     height: 200px;
     background-color: pink;
     display: grid;
     grid-auto-flow: column;
+    grid-template-columns: 200px 200px auto;
+    padding: 0 40px;
 }
 
-#logo-footer {
-    height: 100px;
+.grid-items-footer {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: center;
+}
+
+
+
+
+#logo-footer img {
+    width: 100px;
+    height: auto;
+}
+
+#contact-us {
+  
 }
 
 #contact-us h1 {
@@ -72,4 +196,26 @@ footer {
 
 #contact-us p {
     font-size: 1.5rem;
+}
+
+#sociala-medier {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#sociala-medier a {
+    padding: 0.5em;
+}
+
+#sociala-medier a i {
+    font-size: 4rem;
+    color: black;
+    padding: 0.4em;
+    border-radius: 30px;
+    background-color: rgb(255, 215, 221);
+}
+
+#sociala-medier a i:hover {
+    color: #D23185;
 }
