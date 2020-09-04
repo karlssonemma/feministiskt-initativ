@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: white;
+}
+
+section {
+    padding: 0 15rem;
+}
+
+
+/* VÅR POLITIK SECTION 1 */
+
+#klart-vi-kan {
+    height: 100vh;
+}
+
+
+#klart-vi-kan h1 {
+    font-size: 6rem;
+}
+
+/* VÅR POLITIK SECTION 2 */
+
+#tycker-om {
+    background-color: white;
+    height: 100vh;
+}
+
+#tycker-om h1 {
+    font-size: 5rem;
+    text-align: center;
+    padding: 4rem;
+}
+
+#tycker-om-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#tycker-om-grid div {
+    width: 150px;
+    height: 150px;
+    margin: 3rem;
+    background-color: rgb(196, 196, 196);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    
+}
+
+#tycker-om-grid a {
+    font-size: 1.6rem;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+#tycker-om-grid a span {
+    display: block;
+}
+
+#tycker-om-grid a:hover {
+    transform: scale(1.2);
+}
+
+
+#hela-programmet {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+#hela-programmet a {
+    padding: 20px;
+    border: 5px solid pink;
+    font-size: 2rem;
+    text-decoration: none;
+    color: pink;
+}

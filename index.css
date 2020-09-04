@@ -15,43 +15,6 @@ body {
 }
 
 
-/* NAVBAR */
-
-nav {
-    width: auto;
-    height: auto;
-    background-color: pink;
-}
-
-#left-nav {
-    padding: 0 40px;
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: 100px;
-
-}
-#logo-header {
-    width: 80px;
-    margin: 0 20px;
-}
-
-#left-nav a {
-    font-size: 2.2rem;
-    text-decoration: none;
-    padding: 0 20px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#left-nav a:hover {
-    color: #D23185;
-}
-
-
-
 
 
 
@@ -62,16 +25,16 @@ section {
 
 /* INDEX SECTION 1 */
 
-#index-section-1 {
+#framtiden-rosa {
     background-color: white;
     height: 100vh;
 }
 
-#index-section-1 h1 {
+#framtiden-rosa h1 {
     font-size: 6rem;
 }
 
-#index-section-1 span {
+#framtiden-rosa span {
     font-size: 10rem;
     display: block;
 }
@@ -79,13 +42,13 @@ section {
 
 /* INDEX SECTION 2 */ 
 
-#index-section-2 {
+#j-m-h {
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.473);
     display: flex;
 }
 
-#index-section-2 article {
+#j-m-h article {
     display: flex;
     flex-direction: column;
     padding: 0 4rem;
@@ -93,21 +56,21 @@ section {
     text-align: center;
 }
 
-#index-section-2 h1, #index-section-2 p {
+#j-m-h h1, #j-m-h p {
     color: white;
     font-weight: 50;
 }
 
-#index-section-2 h1 {
+#j-m-h h1 {
     font-size: 3rem;
     padding: 0.8em;
 }
 
-#index-section-2 p {
+#j-m-h p {
     font-size: 1.6rem;
 }
 
-#index-section-2 i {
+#j-m-h i {
     font-size: 4rem;
     color: white;
 }
@@ -122,100 +85,8 @@ section {
 
 
 
-/* VÅR POLITIK SECTION 1 */
-
-#var-politik-section-1 {
-    background-color: white;
-    height: 100vh;
-}
-
-
-#var-politik-section-1 h1 {
-    font-size: 6rem;
-}
-
-/* VÅR POLITIK SECTION 2 */
-
-#var-politik-section-2 {
-    background-color: white;
-}
-
-#var-politik-section-2 div {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 400px);
-}
-
-#var-politik-section-2 article {
-    font-size: 6rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: pink;
-    text-align: center;
-}
 
 
 
 
 
-
-/* FOOTER */
-
-footer {
-    height: 200px;
-    background-color: pink;
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: 200px 200px auto;
-    padding: 0 40px;
-}
-
-.grid-items-footer {
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    justify-content: center;
-}
-
-
-
-
-#logo-footer img {
-    width: 100px;
-    height: auto;
-}
-
-#contact-us {
-  
-}
-
-#contact-us h1 {
-    font-size: 2rem;
-}
-
-#contact-us p {
-    font-size: 1.5rem;
-}
-
-#sociala-medier {
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-#sociala-medier a {
-    padding: 0.5em;
-}
-
-#sociala-medier a i {
-    font-size: 4rem;
-    color: black;
-    padding: 0.4em;
-    border-radius: 30px;
-    background-color: rgb(255, 215, 221);
-}
-
-#sociala-medier a i:hover {
-    color: #D23185;
-}
