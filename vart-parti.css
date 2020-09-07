@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: white;
+}
+
+section {
+    padding: 0 15rem;
+}
+
+
+
+
+
+
+
+
+
+#talespersoner {
+    margin: 50px auto;
+}
+
+#talespersoner-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+.talespersoner-items {
+    display: flex;
+    flex-direction: column;
+    
+    width: auto;
+    height: auto;
+}
+
+.article-grid {
+    display: grid;
+    grid-auto-flow: column;
+    margin: 2rem 0;
+}
+
+.img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.article-grid img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    left: 6.4rem;
+    border: 1px solid white;
+}
+
+
+.talespersoner-items h1, .talespersoner-items h2 {
+    margin-left: 150px;
+}
+
+.talespersoner-items h1 {
+    font-size: 1.5rem;
+}
+
+.talespersoner-items h2 {
+    font-size: 2rem;
+}
+
+.article-text p {
+    background-color: rgb(224, 224, 224);
+    padding: 3rem 3rem 3rem 8rem;
+    font-size: 1.5rem;
+}
