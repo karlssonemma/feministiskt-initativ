@@ -4,12 +4,12 @@
 
 html {
     font-size: 62.5%;
-    font-family: sans-serif;
+    font-family: 'Nunito sans', sans-serif;
 }
 
 body {
     height: 100vh;
-    background-image: url(./img/index-background.jpg);
+    background-image: url(./img/diversity.jpeg);
     background-attachment: fixed;
     background-size: cover;
 }
@@ -41,7 +41,7 @@ section {
 
 #j-m-h {
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.473);
+    background-color: rgba(0, 0, 0, 0.678);
     display: flex;
 }
 
