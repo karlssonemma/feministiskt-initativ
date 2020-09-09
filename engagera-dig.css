@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -54,19 +55,101 @@ section {
     
 }
 
+
+
+
 #bli-medlem {
-    height: 800px;
+    height: max-content;
+    margin: 3em;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #bli-medlem-container {
-    border: 1px solid black;
-    width: 600px;
-    padding: 3em;
+    border: 5px solid rgb(255, 206, 229);
+    width: auto;
+    padding: 5em;
+    margin: 5em;
+    box-sizing: border-box;
 }
 
-#email {
+#bli-medlem-container h1 {
+    font-size: 4rem;
+    padding: 0.5em 0;
+    
+}
+
+#bli-medlem-container p {
+    font-size: 2rem;
+}
+
+form {
+    width: 700px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 1em 0;
+}
+
+#contact label {
+    display: block;
+    margin: 0.6em 0;
+    font-size: 1.3rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    color: rgb(212, 212, 212);
+}
+
+#contact input {
     width: 100%;
+    padding: 1em 0 1em 1em;
+    box-sizing: border-box;
+    border: 2px solid rgb(167, 167, 167);
+    outline: none;
+}
+
+#contact input:focus {
+    box-shadow: 0 0 2px 2px rgb(199, 199, 199);
+}
+
+.form-same-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+}
+
+.form-same-row div {
+    width: 100%;
+}
+
+input[type=radio] {
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    position: absolute;
+}
+
+#donation h2 {
+    margin-bottom: 2em;
+}
+
+#donation-value label {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    color: rgb(138, 138, 138);
+    margin: 1em;
+    padding: 1em;
+    background-color: rgb(231, 231, 231);
+}
+
+#donation-value input[type=radio]:focus + label {
+    background: #66c0ae;
+    color: white;
+}
+
+#donation-value :nth-child(2) {
+    margin-left: 0;
 }

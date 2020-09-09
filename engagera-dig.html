@@ -40,21 +40,70 @@
 
     <section id="bli-medlem">
         <div id="bli-medlem-container">
+            
             <h1>Bli medlem - vi gör det tillsammmans!</h1>
             <p>Tack för att du vill bli medlem – din medlemsavgift är en investering i en rosa framtid!</p>
+            
             <form action="">
+                <div id="contact">
+                    <h2>1. Kontaktuppgifter</h2>
 
-                <h2>Kontaktuppgifter</h2>
+                    <div class="form-same-row">
+                        <div>
+                            <label for="firstname">Förnamn*</label>
+                            <input type="text" id="firstname">
+                        </div>
+                        <div>
+                            <label for="lastname">Efternamn*</label>
+                            <input type="text" id="lastname">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="address">Adress*</label>
+                        <input type="text" id="address">
+                    </div>
+
+                    <div class="form-same-row">
+                        <div>
+                            <label for="ort">Ort*</label>
+                            <input type="text" id="ort">
+                        </div>
+
+                        <div>
+                            <label for="postnummer">Postnummer*</label>
+                            <input type="number" id="postnummer">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="email">Email*</label>
+                        <input type="email" id="email">
+                    </div>
                 
-                <label for="firstname">Förnamn</label>
-                <input type="text" id="firstname">
+                    <div>
+                        <label for="phone">Telefonnummer</label>
+                        <input type="tel" id="phone">
+                    </div>
+                </div>
+                
+                <div id="donation">
+                    <h2>2. Jag vill betala</h2>
+                    
+                    <div id="donation-value">
+                        <input type="radio" id="value-50" name="value" value="50">
+                        <label for="value-50">50 kr</label>
 
-                <label for="lastname">Efternamn</label>
-                <input type="text" id="lastname">
+                        <input type="radio" id="value-100" name="value" value="100">
+                        <label for="value-100">100 kr</label>
 
-                <label for="email">Email</label>
-                <input type="email" id="email">
+                        <input type="radio" id="value-200" name="value" value="200">
+                        <label for="value-200">200 kr</label>
 
+                        <input type="radio" id="value-300" name="value" value="300">
+                        <label for="value-300">300 kr</label>
+                    </div>
+                </div>
 
             </form>
         </div>
