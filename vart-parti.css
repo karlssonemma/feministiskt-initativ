@@ -5,7 +5,6 @@
 html {
     font-size: 62.5%;
     font-family: 'Nunito sans', sans-serif;
-    font-weight: 100;
 }
 
 body {
@@ -18,11 +17,35 @@ section {
 }
 
 
+#vart-parti-intro {
+    height: 400px;
+    background-color: #66c0ae;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#vart-parti-intro div {
+    height: max-content;
+    width: max-content;
+    padding: 5em;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 
+#vart-parti-intro h1 {
+    font-size: 4rem;
+    padding-bottom: 0.5em;
+}
 
-
-
+#vart-parti-intro p {
+    font-size: 2rem;
+    font-weight: 100;
+}
 
 
 #talespersoner {
@@ -82,5 +105,6 @@ section {
     background-color: rgb(243, 243, 243);
     padding: 3rem 3rem 3rem 8rem;
     font-size: 1.5rem;
+    font-weight: 100;
     
 }

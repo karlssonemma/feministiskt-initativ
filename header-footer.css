@@ -6,7 +6,7 @@
 nav {
     width: auto;
     height: auto;
-    background-color: pink;
+    background-color: white;
 }
 
 #logo-header {
@@ -15,25 +15,31 @@ nav {
 }
 
 #left-nav {
-    padding: 0 40px;
+    height: 120px;
+    padding: 0 4em;
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: 100px;
+    grid-template-columns: max-content;
+    justify-content: start;
+    
 }
 
 #left-nav a {
-    font-size: 2rem;
+    font-size: 2.2rem;
+    letter-spacing: 0.05em;
+    font-weight: 600;
     text-decoration: none;
-    padding: 0 20px;
-    color: white;
+    padding: 0 2.2em;
+    color: #d23185;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: .2s;
 }
 
-#left-nav a:hover {
-    color: #D23185;
+#left-nav a:nth-child(n+2):hover {
+    color: #d2318485;
+    border-bottom: 8px solid #d2318457;
 }
 
 

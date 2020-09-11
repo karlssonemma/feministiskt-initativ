@@ -29,6 +29,7 @@
         </div>
     </nav> 
 
+    <!--RUNT OM-->
 
     <section id="runt-om">
         <article>
@@ -37,12 +38,16 @@
         </article>
     </section>
 
+    <!--BLI MEDLEM-->
 
     <section id="bli-medlem">
         <div id="bli-medlem-container">
             
             <h1>Bli medlem - vi gör det tillsammmans!</h1>
             <p>Tack för att du vill bli medlem – din medlemsavgift är en investering i en rosa framtid!</p>
+            <p>Medlemsavgiften är en valfri summa mellan 50 och 300 kr, och medlemskapet gäller för ett kalenderår.</p>
+            <p>Din mejladress vill vi ha för att kunna ge dig medlemsinformation och möjlighet att påverka Feministiskt initiativ. Din postadress behöver vi för att du ska hamna i rätt lokala förening. På så sätt får du rätt information från oss!</p>
+            <p>Har du skyddade personuppgifter? <span>Kontakta oss på <a href="">medlem@feministisktinitiativ.se</a> så hjälper vi dig med ditt medlemskap.</span></p>
             
             <form action="">
                 <div id="contact">
@@ -51,41 +56,60 @@
                     <div class="form-same-row">
                         <div>
                             <label for="firstname">Förnamn*</label>
-                            <input type="text" id="firstname">
+                            <input type="text" name id="firstname">
                         </div>
                         <div>
                             <label for="lastname">Efternamn*</label>
-                            <input type="text" id="lastname">
+                            <input type="text" name id="lastname">
                         </div>
                     </div>
 
                     <div>
                         <label for="address">Adress*</label>
-                        <input type="text" id="address">
+                        <input type="text" name id="address">
                     </div>
 
                     <div class="form-same-row">
                         <div>
                             <label for="ort">Ort*</label>
-                            <input type="text" id="ort">
+                            <input type="text" name id="ort">
                         </div>
 
                         <div>
                             <label for="postnummer">Postnummer*</label>
-                            <input type="number" id="postnummer">
+                            <input type="number" name id="postnummer">
                         </div>
                     </div>
 
                     <div>
                         <label for="email">Email*</label>
-                        <input type="email" id="email">
+                        <input type="email" name id="email">
                     </div>
                 
                     <div>
                         <label for="phone">Telefonnummer</label>
-                        <input type="tel" id="phone">
+                        <input type="tel" name id="phone">
+                    </div>
+
+                    <div class="form-same-row">
+                        <div>
+                            <label for="birthdate">Födelsedatum</label>
+                            <div id="birthdate">
+                                <input type="date" name="birthdate">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="gender">Kön</label>
+                            <select name="gender" id="gender">
+                                <option value="" selected disabled>Välj kön</option>
+                                <option value="female">Kvinna</option>
+                                <option value="male">Man</option>
+                                <option value="other">Annat</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
+
                 
                 <div id="donation">
                     <h2>2. Jag vill betala</h2>
