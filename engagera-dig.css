@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 html {
@@ -19,7 +19,7 @@ section {
 }
 
 #runt-om {
-    height: 600px;
+    min-height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -60,7 +60,7 @@ section {
 
 
 #bli-medlem {
-    height: max-content;
+    min-height: max-content;
     margin: 3em;
     display: flex;
     justify-content: center;
@@ -81,7 +81,7 @@ section {
     
 }
 
-#bli-medlem-container p {
+#bli-medlem-container > p {
     font-size: 2rem;
     padding: 0.5em 0;
 }

@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 html {
@@ -25,14 +26,17 @@ section {
 #framtiden-rosa {
     background-color: white;
     height: 100vh;
+    letter-spacing: 0.2em;
+    display: flex;
+    align-items: flex-end;
 }
 
 #framtiden-rosa h1 {
-    font-size: 6rem;
+    font-size: 8rem;
 }
 
 #framtiden-rosa span {
-    font-size: 10rem;
+    font-size: 3em;
     display: block;
 }
 
@@ -76,14 +80,126 @@ section {
 /* INDEX SECTION 3 */ 
 
 #index-section-3 {
-    height: 100vh;
+    height: auto;
+    width: auto;
+    padding-top: 10em;
+    padding-bottom: 10em;
     background-color: white;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+#index-section-3 > a {
+    height: auto;
+    width: 800px;
+    padding: 3em;
+    text-align: right;
+    background-color: white;
+    border: 1rem solid rgb(235, 235, 235);
+    text-decoration: none;
+    color: black;
+
+    position: relative;
+    margin-right: -7rem;
+} 
+
+#index-section-3 a:hover {
+    border: 1rem solid #66c0ae;
+}
+
+#index-section-3 h1 {
+    font-size: 3rem;
+    padding-bottom: 0.5em;
+}
+
+#index-section-3 p {
+    font-size: 2rem;
+    font-weight: 100;
+    padding-bottom: 0.5em;
+    
+}
+
+#index-section-3 img {
+    height: 400px;
+}
+
+#index-section-3 i {
+    padding-left: 0.2em;
+    position: relative;
+    top: 0.05em;
+}
+
+#index-section-3 a:hover i {
+    color: #66c0ae;
 }
 
 
+#index-section-3 a:hover b {
+    color: #66c0ae;
+}
 
+/* INDEX SECTION 4 */
 
+#index-section-4 {
+    padding: 0;
+    height: 450px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 
+#index-section-4 article {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
 
+#index-section-4 article:nth-child(odd) {
+    background-color: #8be0cf;
+}
 
+#index-section-4 article:nth-child(even) {
+    background-color: #74ccba;
+}
 
+#index-section-4 article div {
+    padding: 4em;
+}
+
+#index-section-4 article h1 {
+    font-size: 4rem;
+    padding-bottom: 0.5em;
+}
+
+#index-section-4 article p {
+    font-size: 2rem;
+    margin-bottom: 1em;
+    font-weight: 100;
+}
+
+#index-section-4 article a {
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 0.8em 3em;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+}
+
+#index-section-4 article a:hover,
+                         input[type="submit"]:hover {
+    background-color: rgb(240, 240, 240);
+    cursor: pointer;
+}
+
+#index-section-4 input[type=email],
+                 input[type=submit] {
+    border: none;
+    background-color: white;
+    padding: 1em;
+}
+
+#index-section-4 input[type=email]:focus {
+    outline: none;
+}
