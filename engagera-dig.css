@@ -6,7 +6,6 @@
 html {
     font-size: 62.5%;
     font-family: 'Nunito sans', sans-serif;
-    font-weight: 100;
 }
 
 body {
@@ -84,6 +83,7 @@ section {
 #bli-medlem-container > p {
     font-size: 2rem;
     padding: 0.5em 0;
+    font-weight: 100;
 }
 
 #bli-medlem-container p span {
@@ -100,7 +100,8 @@ form {
 
 form h2 {
     font-size: 2rem;
-    margin: 1em 0;
+    margin-top: 2em;
+    margin-bottom: 1em;
 }
 
 #contact label {
@@ -141,20 +142,17 @@ form h2 {
     position: absolute;
 }
 
-
-#donation h2 {
-    
-}
-
-#donation-value label {
+#donation-value label, #medlem-button button {
     display: inline-block;
     font-size: 2rem;
     font-weight: 600;
     letter-spacing: 0.1rem;
     color: rgb(138, 138, 138);
-    margin: 1em;
+    margin-right: 1em;
     padding: 1em;
+    border-radius: 10px;
     background-color: rgb(231, 231, 231);
+    cursor: pointer;
 }
 
 #donation-value input[type=radio]:focus + label {
@@ -166,6 +164,14 @@ form h2 {
     margin-left: 0;
 }
 
+/* PAYMENT TYPE */ 
+
+#payment-type select {
+    margin-bottom: 2em;
+}
+
+/* INTEGRITY */
+
 #integrity h1 {
     font-size: 2.5rem;
     padding-top: 1em;
@@ -175,6 +181,7 @@ form h2 {
 #integrity p {
     font-size: 1.6rem;
     padding: 0.5em 0;
+    font-weight: 100;
 }
 
 #integrity label {
@@ -182,6 +189,25 @@ form h2 {
     padding: 0.5em;
     display: inline-block;
 }
+
+/* MEDLEM BUTTON */
+
+#medlem-button button {
+    margin: 0;
+    border: 2px solid transparent;
+    margin-top: 1em;
+}
+
+#medlem-button button:hover {
+    background: #66c0ae;
+    color: white;
+}
+
+
+
+
+
+
 
 /* SECTION SUPPORT */
 
@@ -204,6 +230,7 @@ form h2 {
 #support-fi p {
     font-size: 2rem;
     padding-bottom: 0;
+    font-weight: 100;
 }
 
 .support-row {
@@ -231,4 +258,19 @@ form h2 {
     width: 400px;
     height: auto;
     justify-self: flex-end;
+}
+
+.monthly-giver-link {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-top: 2em;
+    padding: 0.8em 3em;
+    background-color: rgb(224, 224, 224);
+    text-decoration: none;
+    color: black;
+    width: max-content;
+}
+
+.monthly-giver-link:hover {
+    background-color: rgb(201, 201, 201);
 }

@@ -4,9 +4,11 @@
 }
 
 nav {
-    width: auto;
+    width: 100vw;
     height: auto;
     background-color: white;
+    display: flex;
+    justify-content: space-between;
 }
 
 #logo-header {
@@ -16,15 +18,13 @@ nav {
 
 #left-nav {
     height: 120px;
-    padding: 0 4em;
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: max-content;
+    display: flex;
     justify-content: start;
     
 }
 
 #left-nav a {
+    width: max-content;
     font-size: 2.2rem;
     letter-spacing: 0.05em;
     font-weight: 600;
@@ -42,7 +42,78 @@ nav {
     border-bottom: 8px solid #d2318457;
 }
 
+#right-nav {
+    padding: 0 4em;
+    font-weight: 100;
+    display: flex;
+    width: 310px;
+    align-items: center;
+    justify-content: flex-start;
+}
 
+#right-nav label {
+    width: max-content;
+    cursor: pointer;
+}
+
+#right-nav div {
+    transition: 1s ease-in;
+    position: relative;
+    right: 0;
+    display: flex;
+}
+
+#right-nav a, #right-nav label {
+    padding: 1em;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+#right-nav #search-bar {
+    width: 0;
+    opacity: 0;
+    transition: 1s;
+    padding: 1em;
+    border: none;
+    border-bottom: 1px solid rgb(77, 77, 77);
+    color: rgb(77, 77, 77);
+}
+
+#right-nav label:hover + #search-bar, 
+#right-nav #search-bar:hover,
+#right-nav #search-bar:focus {
+    width: 400px;
+    outline: none;
+    opacity: 1;
+}
+
+#right-nav label:hover + #search-bar ~ div, 
+#right-nav #search-bar:hover ~ div,
+#right-nav #search-bar:focus ~ div {
+    position: relative;
+    right: -100vw;
+}
+
+/*
+#right-nav label:focus ~ a, #right-nav #search-hidden:focus ~ a {
+    display: none;
+}
+
+
+
+#right-nav .search:focus + .search-hidden, #right-nav .search-hidden:focus {
+    
+    flex-grow: 3;
+    transform: scaleX(1.5);
+    transform-origin: left; 
+    
+}
+
+#right-nav .search:focus ~ a, #right-nav .search-hidden:focus ~ a {
+    display: none;
+}
+
+*/
 
 /* FOOTER */
 

@@ -25,7 +25,14 @@
         </div>
 
         <div id="right-nav">
-            <a href=""></a>
+            <label for="search-bar" href="">Sök</label>
+            <input id="search-bar" type="text">
+            <div>
+                <a href="">Om Fi</a>
+                <a href="">Nyheter</a>
+                <a href="">Press</a>
+                <a href="">Kontakt</a>
+            </div>
         </div>
     </nav> 
 
@@ -129,6 +136,14 @@
                     </div>
                 </div>
 
+                <div id="payment-type">
+                    <h2>3. Betalningssätt</h2>
+                    <select name="payment" id="payment">
+                        <option value="card">Kort (Visa / Mastercard)</option>
+                        <option value="bill">Faktura på posten</option>
+                    </select>
+                </div>
+
                 <div id="integrity">
                     <h1>Din integritet är viktig</h1>
                     <p>När du registrerar dig som medlem i Feministiskt Initiativ sparar och behandlar vi dina uppgifter. Vi samlar in förnamn, efternamn, postadress, mailadress, telefon och vilken kommun du är folkbokförd i. Uppgifter som samlas in av Feministiskt Initiativ vid medlemsregistrering delas med din kommunförening och avdelning. Personuppgiftsansvaret är då gemensamt med kommunföreningen och avdelningen och uppgifterna får användas inom ramen för vår integritetspolicy. Uppgifter som insamlas i samband med tecknande av medlemskap insamlas för att Feministiskt initiativ ska kunna fullgöra våra skyldigheter gentemot dig som medlem. Uppgifterna sparas under den tid som du är medlem samt ytterligare fyra månader. Du kan se hela integritetspolicyn här.</p>
@@ -141,9 +156,16 @@
                     <input type="radio" name="integrity" id value="nej">
                 </div>
 
+                <div id="medlem-button">
+                    <button>BLI MEDLEM!</button>
+                </div>
+
             </form>
         </div>
     </section>
+
+
+    <!--SUPPORT FI-->
 
     <section id="support-fi">
 
@@ -167,6 +189,7 @@
                 <h1>Månadsgivare?</h1>
                 <h2>Frihet måste försvaras - det går bra att delbetala</h2>
                 <p>Vi har gott om idéer men ont om resurser. Fi behöver mer pengar för att kunna nå ut. Vi behöver din hjälp. Med regelbundna donationer kan Fi bli en stark röst. Bli månadsgivare redan idag – du gör skillnad.</p>
+                <a class="monthly-giver-link" href="">BLI MÅNADSGIVARE</a>
             </div>
         </div>
 
