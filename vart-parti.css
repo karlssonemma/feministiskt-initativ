@@ -14,29 +14,34 @@ body {
 }
 
 section {
+    max-width: 100vw;
     padding: 0 15rem;
 }
 
+/* INTRO */
 
 #vart-parti-intro {
     height: 400px;
-    background-color: #66c0ae;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
+    background-color: #66c0ae;
 }
 
 #vart-parti-intro div {
     height: max-content;
     width: max-content;
     padding: 5em;
-    background-color: white;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
 
+    background-color: white;
+}
 
 #vart-parti-intro h1 {
     font-size: 4rem;
@@ -49,14 +54,16 @@ section {
 }
 
 
+/* TALESPERSONER */ 
+
 #talespersoner {
-    margin: 50px auto;
+    margin: 10em 0;
 }
 
 #talespersoner-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
+    gap: 2em;
 }
 
 .talespersoner-items {
@@ -68,30 +75,24 @@ section {
 }
 
 .article-grid {
-    display: grid;
-    grid-auto-flow: column;
-    margin: 1rem 0;
+    display: flex;
 }
 
 .img-container {
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .article-grid img {
     width: 150px;
     height: 150px;
+
     border-radius: 50%;
     object-fit: cover;
-    position: relative;
-    left: 6rem;
     box-shadow: 0px 0px 15px 2px rgba(61, 61, 61, 0.212);
-}
-
-
-.talespersoner-items h1, .talespersoner-items h2 {
-    margin-left: 150px;
+    
+    position: relative;
+    left: 6em;
 }
 
 .talespersoner-items h1 {
@@ -102,9 +103,13 @@ section {
     font-size: 2rem;
 }
 
-.article-text p {
+.talespersoner-items h1, .talespersoner-items h2 {
+    margin-left: 150px;
+}
+
+.article-grid p {
     background-color: rgb(243, 243, 243);
-    padding: 3rem 3rem 3rem 8rem;
+    padding: 2em 2em 2em 6em;
     font-size: 1.5rem;
     font-weight: 100;
     

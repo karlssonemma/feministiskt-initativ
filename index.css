@@ -15,51 +15,74 @@ body {
     background-size: cover;
 }
 
-
 section {
     padding: 0 15rem;
+    max-width: 100vw;
 }
 
 
-/* INDEX SECTION 1 */
+/* FRAMTIDEN ROSA */
 
 #framtiden-rosa {
-    background-color: white;
-    height: 100vh;
-    letter-spacing: 0.2em;
+    background-image: url(./img/index-background.jpg);
+    background-size: cover;
+    height: 90vh;
+    width: 100vw;
+    padding: 0;
+    
+    overflow: hidden;
+}
+
+
+#framtiden-rosa div {
+    width: 100vw;
+    height: 90vh;
+    opacity: 0;
+
+    background-color: rgba(255, 255, 255, 0.541);
+    box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.541);
+
     display: flex;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: center;
+
+    transition: 1s;
 }
 
 #framtiden-rosa h1 {
-    font-size: 8rem;
+    font-size: 10rem;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+    color: #d23185;
 }
 
-#framtiden-rosa span {
-    font-size: 3em;
-    display: block;
+#framtiden-rosa div:hover {
+    opacity: 1;
 }
 
 
-/* INDEX SECTION 2 */ 
+/* J M H */ 
 
 #j-m-h {
     height: 100vh;
+
     background-color: rgba(0, 0, 0, 0.678);
+
     display: flex;
 }
 
 #j-m-h article {
+    padding: 0 4rem;
+    text-align: center;
+
     display: flex;
     flex-direction: column;
-    padding: 0 4rem;
     justify-content: center;
-    text-align: center;
 }
 
 #j-m-h h1, #j-m-h p {
     color: white;
-    font-weight: 50;
+    font-weight: 100;
 }
 
 #j-m-h h1 {
@@ -77,24 +100,23 @@ section {
 }
 
 
-/* INDEX SECTION 3 */ 
+/* VÅRT PARTI LÄNK */ 
 
-#index-section-3 {
-    height: auto;
-    width: auto;
-    padding-top: 10em;
-    padding-bottom: 10em;
+#vart-parti-link-section {
     background-color: white;
+    
+    padding: 10em;
+    margin: auto;
     display: flex;
     align-items: center;
-    margin: auto;
 }
 
-#index-section-3 > a {
+#vart-parti-link-section a {
     height: auto;
     width: 800px;
     padding: 3em;
     text-align: right;
+
     background-color: white;
     border: 1rem solid rgb(235, 235, 235);
     text-decoration: none;
@@ -104,102 +126,104 @@ section {
     margin-right: -7rem;
 } 
 
-#index-section-3 a:hover {
-    border: 1rem solid #66c0ae;
+#vart-parti-link-section a:hover {
+    border-color: #66c0ae;
 }
 
-#index-section-3 h1 {
+#vart-parti-link-section h1 {
     font-size: 3rem;
     padding-bottom: 0.5em;
 }
 
-#index-section-3 p {
+#vart-parti-link-section p {
     font-size: 2rem;
     font-weight: 100;
     padding-bottom: 0.5em;
-    
 }
 
-#index-section-3 img {
-    height: 400px;
-}
-
-#index-section-3 i {
+#vart-parti-link-section i {
     padding-left: 0.2em;
     position: relative;
     top: 0.05em;
 }
 
-#index-section-3 a:hover i {
+#vart-parti-link-section img {
+    height: 400px;
+}
+
+#vart-parti-link-section a:hover i {
     color: #66c0ae;
 }
 
-
-#index-section-3 a:hover b {
+#vart-parti-link-section a:hover b {
     color: #66c0ae;
 }
 
-/* INDEX SECTION 4 */
+/* BOXES */
 
-#index-section-4 {
+#boxes {
     padding: 0;
     height: 450px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-#index-section-4 article {
+#boxes article {
     display: flex;
     flex-direction: column;
-    align-items: left;
     justify-content: center;
 }
 
-#index-section-4 article:nth-child(odd) {
+#boxes article:nth-child(odd) {
     background-color: #8be0cf;
 }
 
-#index-section-4 article:nth-child(even) {
+#boxes article:nth-child(even) {
     background-color: #74ccba;
 }
 
-#index-section-4 article div {
+#boxes article div {
     padding: 4em;
 }
 
-#index-section-4 article h1 {
-    font-size: 4rem;
+#boxes article h1 {
     padding-bottom: 0.5em;
+
+    font-size: 4rem;
 }
 
-#index-section-4 article p {
-    font-size: 2rem;
+#boxes article p {
     margin-bottom: 1em;
+
+    font-size: 2rem;
     font-weight: 100;
 }
 
-#index-section-4 article a {
+#boxes article a {
     display: inline-block;
-    font-size: 1.5rem;
     padding: 0.8em 3em;
+
+    font-size: 1.5rem;
     background-color: white;
     text-decoration: none;
     color: black;
 }
 
-#index-section-4 article a:hover,
-                         input[type="submit"]:hover {
-    background-color: rgb(240, 240, 240);
-    cursor: pointer;
-}
-
-#index-section-4 input[type=email],
-                 input[type=submit] {
+#boxes 
+input[type=email],
+input[type=submit] {
     border: none;
     background-color: white;
     padding: 1em;
 }
 
-#index-section-4 input[type=email]:focus {
+#boxes article 
+a:hover,
+input[type="submit"]:hover {
+    background-color: rgb(240, 240, 240);
+    cursor: pointer;
+}
+
+#boxes input[type=email]:focus {
     outline: none;
 }

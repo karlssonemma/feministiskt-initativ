@@ -14,6 +14,7 @@ body {
 }
 
 section {
+    max-width: 100vw;
     padding: 0 15rem;
 }
 
@@ -22,18 +23,19 @@ section {
 
 #var-politik-intro {
     height: 400px;
-    background-color: #66c0ae;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    background-color: #66c0ae;
 }
 
 #var-politik-intro div {
     height: max-content;
     width: 800px;
-    display: flex;
-    
     padding: 5em;
+
+    display: flex;
     justify-content: center;
     align-items: center;
 
@@ -46,21 +48,23 @@ section {
     text-align: center;
 }
 
-/* KLART VI KAN */
+/* KLART VI KAN 
 
 #klart-vi-kan {
     height: 800px;
 }
 
-
 #klart-vi-kan h1 {
     font-size: 6rem;
 }
+
+*/
 
 /* TYCKER OM */
 
 #tycker-om {
     background-color: white;
+
     height: 800px;
     display: flex;
     flex-direction: column;
@@ -69,33 +73,35 @@ section {
 }
 
 #tycker-om h1 {
+    padding: 1em;
+
     font-size: 5rem;
     text-align: center;
-    padding: 4rem;
 }
 
 #tycker-om-grid {
     display: grid;
-    grid-template-columns: repeat(4, 200px);
-    gap: 2.8rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.8em;
 }
 
 #tycker-om-grid div {
     width: 150px;
     height: 150px;
-    margin: 2rem;
+    margin: 1em;
     border-radius: 50%;
     
     display: flex;
     justify-content: space-around;
     align-items: center;
     justify-self: center;
+
     transition: .3s;
-    
 }
 
 #tycker-om-grid a {
-    padding: 1rem;
+    padding: 0.5em;
+    
     font-size: 1.8rem;
     font-weight: 600;
     color: black;
@@ -103,43 +109,66 @@ section {
     text-decoration: none;
 }
 
-#tycker-om-grid a span {
-    display: block;
-}
-
 #tycker-om-grid div:hover {
     transform: scale(1.2);
 }
 
-
+/* RÖD */
 #tycker-om-grid div:nth-of-type(6n+1) { 
-    border: 4px solid rgba(255, 0, 0, 0.5);
+    background-color: rgba(255, 0, 0, 0.2);
 }
 
+#tycker-om-grid div:nth-of-type(6n+1):hover {
+    background-color: rgba(255, 0, 0, 0.5)
+}
+
+/* ORANGE */
 #tycker-om-grid div:nth-of-type(6n+2) {
-    border: 4px solid rgba(255, 166, 0, 0.5);
+    background-color: rgba(255, 166, 0, 0.2);
 }
 
+#tycker-om-grid div:nth-of-type(6n+2):hover {
+    background-color: rgba(255, 166, 0, 0.5)
+}
+
+/* GUL */
 #tycker-om-grid div:nth-of-type(6n+3) {
-    border: 4px solid rgba(255, 255, 0, 0.5);
+    background-color: rgba(255, 255, 0, 0.2);
+}
+#tycker-om-grid div:nth-of-type(6n+3):hover {
+    background-color: rgba(255, 255, 0, 0.5)
 }
 
+/* GRÖN */
 #tycker-om-grid div:nth-of-type(6n+4) {
-    border: 4px solid rgba(0, 128, 0, 0.5);
+    background-color: rgba(0, 128, 0, 0.2);
+}
+#tycker-om-grid div:nth-of-type(6n+4):hover {
+    background-color: rgba(0, 128, 0, 0.5)
 }
 
+/* BLÅ */
 #tycker-om-grid div:nth-of-type(6n+5) {
-    border: 4px solid rgba(0, 0, 255, 0.5);
+    background-color: rgba(0, 0, 255, 0.2);
+}
+#tycker-om-grid div:nth-of-type(6n+5):hover {
+    background-color: rgba(0, 0, 255, 0.5)
 }
 
+/* LILA*/
 #tycker-om-grid div:nth-of-type(6n+6) {
-    border: 4px solid rgba(128, 0, 128, 0.5);
+    background-color: rgba(128, 0, 128, 0.2);
+}
+#tycker-om-grid div:nth-of-type(6n+6):hover {
+    background-color: rgba(128, 0, 128, 0.5)
 }
 
 
+
+/* HELA PROGRAMMET */
 
 #hela-programmet {
-    height: 300px;
+    height: max-content;
     background-color: white;
     display: flex;
     justify-content: center;
@@ -147,14 +176,20 @@ section {
 }
 
 #hela-programmet a {
-    height: 20px;
-    padding: 20px;
-    border: 5px solid pink;
+    padding: 1em;
+    margin: 3em 0;
+
     font-size: 2rem;
+    color: #d231848c;
+    border: 5px solid #d231848c;
     text-decoration: none;
-    color: pink;
+
+    transition: 0.2s;
 }
 
  #hela-programmet a:hover {
     transform: scale(1.1);
+
+    color: white;
+    background-color: #d23185;
 }
