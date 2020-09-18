@@ -45,7 +45,7 @@ nav {
     transition: .2s;
 }
 
-#left-nav a:nth-child(n+2):hover {
+#left-nav a:hover {
     color: #d2318485;
     border-bottom: 8px solid #d2318457;
 }
@@ -96,12 +96,15 @@ nav {
     color: rgb(77, 77, 77);
 
     transition: 1.5s;
+
+    position: absolute;
+    z-index: 1;
 }
 
 #right-nav label:hover + #search-bar, 
 #right-nav #search-bar:hover,
 #right-nav #search-bar:focus {
-    width: 4000px;
+    width: 280px;
 
     outline: none;
     opacity: 1;
@@ -111,7 +114,6 @@ nav {
 #right-nav #search-bar:hover ~ div,
 #right-nav #search-bar:focus ~ div {
     position: relative;
-    right: -100vw;
 }
 
 /* FOOTER */
