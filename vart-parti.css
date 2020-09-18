@@ -18,6 +18,10 @@ section {
     padding: 0 15rem;
 }
 
+#left-nav a:nth-child(3) {
+    border-bottom: 8px solid #d23185;
+}
+
 /* INTRO */
 
 #vart-parti-intro {
